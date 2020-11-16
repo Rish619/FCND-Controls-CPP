@@ -4,12 +4,12 @@
 # X=Y sets X to Y. Y may be a string, float, or list of 3 floats
 ############################################################################
 
-[QuadControlParams] 
+[QuadControlParams]
 
 UseIdealEstimator=1
 
 # Physical properties
-Mass = 0.4
+Mass = 0.5
 L = 0.17
 Ixx = 0.0023
 Iyy = 0.0023
@@ -19,20 +19,20 @@ minMotorThrust = .1
 maxMotorThrust = 4.5
 
 # Position control gains
-kpPosXY = 1
-kpPosZ = 1
-KiPosZ = 20
+kpPosXY = 2.8
+kpPosZ = 3
+KiPosZ = 0
 
 # Velocity control gains
-kpVelXY = 4
-kpVelZ = 4
+kpVelXY = 9
+kpVelZ = 8
 
 # Angle control gains
-kpBank = 5
-kpYaw = 1
+kpBank = 13.7
+kpYaw = 6
 
 # Angle rate gains
-kpPQR = 23, 23, 5
+kpPQR = 70, 70, 15
 
 # limits
 maxAscentRate = 5
